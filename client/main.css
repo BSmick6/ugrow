@@ -1,0 +1,22 @@
+body {
+  background-image: url("/MainBackground.png");
+  background-size: cover;
+}
+
+#home {
+  margin: auto;
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
