@@ -3,7 +3,7 @@ body {
   background-size: cover;
 }
 
-#home {
+.container {
   margin: auto;
   width: 75%;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <div id="home" className="row">
+  <div className="row container">
     <div className="col">
       <img src="/Leaf.1.png" alt="LEAF" />
       <img src="/Leaf.2.png" alt="LEAF" />
