@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';
-// import { withTracker } from 'meteor/react-meteor-data';
-// import Links from '../api/links';
 
 export default class DropDown extends Component {
   constructor(props) {
@@ -55,9 +53,3 @@ export default class DropDown extends Component {
     );
   }
 }
-
-// export default InfoContainer = withTracker(() => {
-//   return {
-//     links: Links.find().fetch(),
-//   };
-// })(Info);
