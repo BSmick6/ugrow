@@ -24,7 +24,12 @@ export default class DropDown extends Component {
     return (
       <div>
         <img onClick={(e) => this.open(e)} src="/dropdownmenu.png" alt="INFO MENU" />
-        <Menu open={Boolean(this.state.anchor)} anchorEl={this.state.anchor} onClose={() => this.close()} >
+        <Menu open={Boolean(this.state.anchor)} anchorEl={this.state.anchor} onClose={() => this.close()}>
+          <MenuItem>
+            <Link to="/">
+              <img src="/dropdown/HOME.png" alt="Home"/>
+            </Link>
+          </MenuItem>
           <MenuItem>
             <Link to="/About">
               <img src="/dropdown/ABOUT.png" alt="About" />

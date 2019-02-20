@@ -20,3 +20,20 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+#hiwHeader {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41pt;
+  color: #37c2c3;
+}
+
+.hiwIcon {
+  margin-top: 25px;
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20pt;
+  color: #37c2c3;
+}
