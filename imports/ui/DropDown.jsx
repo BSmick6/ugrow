@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, MenuItem } from '@material-ui/core';
 // import { withTracker } from 'meteor/react-meteor-data';
 // import Links from '../api/links';
@@ -24,10 +25,26 @@ export default class DropDown extends Component {
       <div>
         <img onClick={(e) => this.open(e)} src="/dropdownmenu.png" alt="INFO MENU" />
         <Menu open={Boolean(this.state.anchor)} anchorEl={this.state.anchor} onClose={() => this.close()} >
-          <MenuItem><img src="/ABOUT.png" alt="About" /></MenuItem>
-          <MenuItem><img src="/HOW_IT_WORKS.png" alt="How It Works" /></MenuItem>
-          <MenuItem><img src="/PRIVACY.png" alt="Privacy" /></MenuItem>
-          <MenuItem><img src="/RESOURCES.png" alt="Resources" /></MenuItem>
+          <MenuItem>
+            <Link to="/About">
+              <img src="/dropdown/ABOUT.png" alt="About" />
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/HowItWorks">
+              <img src="/dropdown/HOW_IT_WORKS.png" alt="How It Works" />
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/Privacy">
+              <img src="/dropdown/PRIVACY.png" alt="Privacy" />
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/Resources">
+              <img src="/dropdown/RESOURCES.png" alt="Resources" />
+            </Link>
+          </MenuItem>
         </Menu>
       </div>
     );

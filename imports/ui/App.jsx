@@ -1,12 +1,15 @@
 import React from 'react';
+import { Switch, Route, Redirect } from 'react-router';
 import Home from './Home.jsx';
 import DropDown from './DropDown.jsx';
 
 const App = () => (
   <div>
-    {/* <img src="/SIGN_IN.png" alt="Sign In Here" /> */}
     <DropDown />
-    <Home />
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Redirect to="/" />
+    </Switch>
   </div>
 );
 
