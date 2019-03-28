@@ -37,3 +37,12 @@ body {
   font-size: 20pt;
   color: #37c2c3;
 }
+
+.centered {
+  font-family: mr-eaves-modern, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #a0a0a0;
+  position: absolute;
+  transform: translate(25%, 50%);
+}

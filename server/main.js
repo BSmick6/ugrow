@@ -1,6 +1,4 @@
-import {
-  Meteor
-} from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import Links from '/imports/api/links';
 
 function insertLink(title, url) {
@@ -23,6 +21,6 @@ Meteor.startup(() => {
     insertLink('Title IX', 'https://titleix.lehigh.edu/reporting-options');
     insertLink('Office of Gender Violence', 'https://studentaffairs.lehigh.edu/content/gender-violence-education-support');
     insertLink('The Health Center', 'https://studentaffairs.lehigh.edu/content/health-wellness-center');
-    insertLink('"Advocates', 'https://studentaffairs.lehigh.edu/content/advocates-0');
+    insertLink('Advocates', 'https://studentaffairs.lehigh.edu/content/advocates-0');
   }
 });
